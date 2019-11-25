@@ -1,0 +1,40 @@
+/* Phones portrait and smaller */
+@media (max-width: 639px) {
+
+}
+
+/* Tablet portrait and smaller */
+@media (max-width: 959px) {
+	
+}
+
+/* Desktop and bigger */
+@media (min-width: 960px){
+
+}
+
+/* Laptop and bigger */
+@media (min-width: 1200px){
+
+}
+
+
+
+
+/* Bootstrap */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+	
+}
+
