@@ -2,34 +2,26 @@
   background: {
     image: $image;
     repeat: no-repeat;
-    size: contain;
+    size: 100% 100%;
   }
 
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: $width;
   height: $height;
 }
 
-
-@mixin flex($justify:flex-start, $align:center) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($path + ".woff") format("woff"), 
+        url($path + ".woff2") format('woff2');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
 }
 
-
-@mixin inline-flex($justify:flex-start, $align:center) {
-  display: inline-flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-@mixin flex-column($justify:center, $align:flex-start) {
-  display: flex;
-  flex-direction: column;
-  justify-content: $justify;
-  align-items: $align;
-}
 
 @mixin font-awesome($content,  $weight) {
   font-family: "Font Awesome 5 Free";
